@@ -32,7 +32,7 @@ while True:
 
 ### SID
 
-| UDS SID (Request) | UDS SID (Response) |  UDS Service | Details |
+| UDS SID (Request) | UDS SID (Response) | UDS Service | Details |
 | ----------------- | --------------------- | ------------- | ------- |  
 | 0x10 | 0x50 | Diagnostic session control | Control which UDS services are available. |
 | 0x11 | 0x51 | ECU Reset | It resets the ECU (includes hard reset, key off and soft reset) |

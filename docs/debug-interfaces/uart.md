@@ -149,7 +149,7 @@ Under Ubuntu or Debian, a non-root user cannot have access to serial ports such 
 
 The most common baud rates for UART are `9600`, `19200`, `38400`, `57600` and `115200`.
 
-A table of other used but less common baud rates can be found here:  [Here](https://lucidar.me/en/serialib/most-used-baud-rates-table/)
+A table of other used but less common baud rates can be found at:  [lucidar.me/most-used-baud-rates-table](https://lucidar.me/en/serialib/most-used-baud-rates-table/)
 
 #### Autodetect the baud rate using a script
 

@@ -163,15 +163,15 @@ Emulate : `qemu-system-avr -S -s -nographic -serial tcp::5678,server=on,wait=off
 * **JFFS/JFFS2** (Journalized Flash Filesystem) : This filesystem is also designed for NAND Flash memory. JFFS utilizes a journaling mechanism to track changes to the filesystem, ensuring data consistency and integrity even in the event of sudden power loss or system crashes. It also supports ECC.
 * **UBIFS** (Unsorted Block Image Filesystem) : UBIFS is a successor to JFFS2 and is optimized for NAND flash memory. It offers improved performance, reliability, and scalability, with features such as compression, encryption, and fast mounting. UBIFS supports multiple partitions.
 
-| Filesystem | RO/RW | Magic                 | Tool |
-| ---------- | --- | ----------------------- | ------------ |
-| SquashFS   | RO  | sqsh, hsqs, qshs, sqsl  | unsquashfs, 7zip |
-| JFFS(2)    | RW  | 0x07C0 (v1), 0x72b6(v2) | jefferson |
-| YAFFS(2)   | RW  | 0x5941ff53              |  unyaffs |
-| CramFS     | RO  | 0x28cd3d45              |  uncramfs, 7zip |
-| UBIFS      | RW  | 0x06101831              |  ubi_reader |
-| RomFS      | RO  | 0x7275                  | /  |
-| CPIO       | RO  | "070707"                | cpio, 7zip |
+| Filesystem | RO/RW | Magic                   | Tool             |
+| ---------- | ---   | ----------------------- | ------------     |
+| SquashFS   | RO    | sqsh, hsqs, qshs, sqsl  | unsquashfs, 7zip |
+| JFFS(2)    | RW    | 0x07C0 (v1), 0x72b6(v2) | jefferson        |
+| YAFFS(2)   | RW    | 0x5941ff53              | unyaffs          |
+| CramFS     | RO    | 0x28cd3d45              | uncramfs, 7zip   |
+| UBIFS      | RW    | 0x06101831              | ubi_reader       |
+| RomFS      | RO    | 0x7275                  | /                |
+| CPIO       | RO    | "070707"                | cpio, 7zip       |
 
 ### Tools
 
